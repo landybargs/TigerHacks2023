@@ -9,6 +9,7 @@ public class HealthScript : MonoBehaviour
     private int MAX_HEALTH = 100;
 
     // Update is called once per frame
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.D))
@@ -30,6 +31,12 @@ public class HealthScript : MonoBehaviour
             throw new System.ArgumentOutOfRangeException("Cannot have negative damage");
         }
         this.health -= amount;
+
+        //Death on health <= 0
+        if(health <= 0 )
+        {
+            Die();
+        }
     }
 
     public void Heal(int amount)
@@ -40,11 +47,6 @@ public class HealthScript : MonoBehaviour
         }
 
         this.health -= amount;
-
-        if(health <= 0 )
-        {
-            Die();
-        }
 
         bool wouldBeOverMaxHealth = health + amount > MAX_HEALTH;
 

@@ -275,7 +275,6 @@ GameObject:
   - component: {fileID: 1087295335}
   - component: {fileID: 1087295334}
   - component: {fileID: 1087295337}
-  - component: {fileID: 1087295338}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -442,19 +441,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1087295338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087295331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc15a2a7b0d25548be07be793e9d279, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!1 &1401583542
 GameObject:
   m_ObjectHideFlags: 0
@@ -3537,7 +3523,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2026631368}
-  - component: {fileID: 2026631369}
   m_Layer: 0
   m_Name: MouseInputs
   m_TagString: Untagged
@@ -3560,18 +3545,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2026631369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2026631366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b96a09a15988e2e419672b681654e9fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
