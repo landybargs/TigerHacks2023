@@ -16,11 +16,19 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        SetEnemyValues();
     }
 
     void Update()
     {
         Swarm();
+    }
+
+    private void SetEnemyValues()
+    {
+        GetComponent<Health>().SetHealth(data.hp, data.hp);
+        damage = data.damage;
+        speed = data.speed;
     }
     private void Swarm()
     {

@@ -8,8 +8,6 @@ public class Health : MonoBehaviour
 
     private int MAX_HEALTH = 100;
 
-    // Update is called once per frame
-
     void Update()
     {
         //Changing Health and Damage values (Use for debugging)
@@ -23,6 +21,12 @@ public class Health : MonoBehaviour
             //Heal(10);
         }
        
+    }
+
+    public void SetHealth(int maxHealth, int health)
+    {
+        this.MAX_HEALTH = maxHealth;
+        this.health = health;
     }
 
     public void Damage(int amount)
@@ -62,7 +66,7 @@ public class Health : MonoBehaviour
     }
     private void Die()
     {
-        Debug.Log("You Died!");
+        Debug.Log("Entity Died!");
         Destroy(gameObject);
     }
 }
