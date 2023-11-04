@@ -3523,29 +3523,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2026631368}
-  - component: {fileID: 2026631367}
   m_Layer: 0
-  m_Name: Input
+  m_Name: MouseInputs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2026631367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2026631366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc15a2a7b0d25548be07be793e9d279, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  mana: 50
-  experience: 0
 --- !u!4 &2026631368
 Transform:
   m_ObjectHideFlags: 0
