@@ -6,7 +6,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField]public int health = 100;
     [SerializeField]public int mana = 50;
-    private int experience = 0;
+    [SerializeField]private int experience = 0;
     // Start is called before the first frame update
     void Start()
     {
