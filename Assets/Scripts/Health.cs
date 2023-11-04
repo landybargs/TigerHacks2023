@@ -2,27 +2,64 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class HealthScript : MonoBehaviour
 {
-    public int health = 100;
-    public int mana = 50;
-    [SerializeField]private int experience = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
+    [SerializeField] private int health = 100;
+
+    private int MAX_HEALTH = 100;
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.D))
         {
-            health -= 20;
-            if(health <= 0)
-            {
-                Debug.Log("You Died");
-            }
+            Damage(10);
         }
+
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            Heal(10);
+        }
+       
+    }
+
+    public void Damage(int amount)
+    {
+        if(amount < 0)
+        {
+            throw new System.ArgumentOutOfRangeException("Cannot have negative damage");
+        }
+        this.health -= amount;
+    }
+
+    public void Heal(int amount)
+    {
+        if(amount < 0)
+        {
+            throw new System.ArgumentOutOfRangeException("Cannot have negative healing");
+        }
+
+        this.health -= amount;
+
+        if(health <= 0 )
+        {
+            Die();
+        }
+
+        bool wouldBeOverMaxHealth = health + amount > MAX_HEALTH;
+
+        if(health + amount > MAX_HEALTH)
+        {
+            this.health = MAX_HEALTH;
+        }
+        else
+        {
+            this.health += amount;
+        }       
+    }
+    private void Die()
+    {
+        Debug.Log("You Died!");
+        Destroy(gameObject);
     }
 }
