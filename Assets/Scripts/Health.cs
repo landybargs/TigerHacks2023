@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthScript : MonoBehaviour
+public class Health : MonoBehaviour
 {
     [SerializeField] private int health = 100;
 
@@ -12,14 +12,15 @@ public class HealthScript : MonoBehaviour
 
     void Update()
     {
+        //Changing Health and Damage values (Use for debugging)
         if (Input.GetKeyDown(KeyCode.D))
         {
-            Damage(10);
+           //Damage(10);
         }
 
         if (Input.GetKeyDown(KeyCode.H))
         {
-            Heal(10);
+            //Heal(10);
         }
        
     }
