@@ -21,6 +21,8 @@ public class MouseInputsScript : MonoBehaviour
             //Can be used for things like spawn GameObject on cursor
             Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));
 
+            //Viewport is a normalized size of the window 
+            //(0,0) at bottom left and (1,1) at top right
             Debug.Log("Viewport Point: " + Camera.main.ScreenToViewportPoint(Input.mousePosition));
         }
 

@@ -13,6 +13,7 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         attackArea = transform.GetChild(0).gameObject;
+        attackArea.SetActive(false); //Deactivates the Attack Area initially
     }
 
     // Update is called once per frame
@@ -20,25 +21,25 @@ public class PlayerAttack : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            attack();
+            Attack();
         }
 
         if(attacking)
         {
-            timer =+ Time.deltaTime;
+            timer += Time.deltaTime;
 
             if(timer >= timetoAttack)
             {
                 timer = 0;
                 attacking = false;
-                attackArea.SetActive(attacking);
+                attackArea.SetActive(false);
             }
         }
     }
 
-    private void attack()
+    private void Attack()
     {
         attacking = true;
-        attackArea.SetActive(attacking);
+        attackArea.SetActive(true);
     }
 }

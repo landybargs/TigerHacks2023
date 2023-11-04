@@ -15,7 +15,7 @@ public class Health : MonoBehaviour
         //Changing Health and Damage values (Use for debugging)
         if (Input.GetKeyDown(KeyCode.D))
         {
-           //Damage(10);
+            //Damage(10);
         }
 
         if (Input.GetKeyDown(KeyCode.H))
