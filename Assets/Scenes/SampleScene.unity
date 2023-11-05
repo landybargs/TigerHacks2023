@@ -349,7 +349,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!1 &875791417
 GameObject:
   m_ObjectHideFlags: 0
@@ -22932,8 +22932,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a02bbe71e1ebd4444a01dcfb63ee3c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 3
   health: 1
+  player: {fileID: 0}
+  moveSpeed: 5
 --- !u!4 &1676894455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5741935249833332440, guid: 76754afc4e05842719047d530b403146, type: 3}
@@ -37808,6 +37809,22 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2360062647654064313, guid: 76754afc4e05842719047d530b403146, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360062647654064313, guid: 76754afc4e05842719047d530b403146, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360062647654064313, guid: 76754afc4e05842719047d530b403146, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360062647654064313, guid: 76754afc4e05842719047d530b403146, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.33
+      objectReference: {fileID: 0}
     - target: {fileID: 3523889911357651671, guid: 76754afc4e05842719047d530b403146, type: 3}
       propertyPath: m_Actions
       value: 
@@ -37816,6 +37833,10 @@ PrefabInstance:
       propertyPath: m_DefaultActionMap
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3689794408546460537, guid: 76754afc4e05842719047d530b403146, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 360201728, guid: 6cefc5ff4a8614fb4a16a42241b5e89d, type: 3}
     - target: {fileID: 4736284339093411541, guid: 76754afc4e05842719047d530b403146, type: 3}
       propertyPath: m_Size.x
       value: 0.15
@@ -37952,6 +37973,18 @@ PrefabInstance:
     - target: {fileID: 4278945950199743958, guid: 2285f1fe50f3b4e5297e8f550ccf86e3, type: 3}
       propertyPath: m_Name
       value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516040205269592510, guid: 2285f1fe50f3b4e5297e8f550ccf86e3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1676894455}
+    - target: {fileID: 5516040205269592510, guid: 2285f1fe50f3b4e5297e8f550ccf86e3, type: 3}
+      propertyPath: moveSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809438980373151639, guid: 2285f1fe50f3b4e5297e8f550ccf86e3, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6833375594055587548, guid: 2285f1fe50f3b4e5297e8f550ccf86e3, type: 3}
       propertyPath: m_SortingOrder
