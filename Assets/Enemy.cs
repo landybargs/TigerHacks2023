@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -60,5 +61,14 @@ public class Enemy : MonoBehaviour
             transform.Translate(direction * moveSpeed * Time.deltaTime);
         }
     }
+/*
+        private void OnTriggerEnter2D(Collider2D other){
+        if(other.tag == "Player"){
+            Enemy enemy = other.GetComponent<Enemy>();
+            if(enemy != null){
+                enemy.Health -=damage;
+            }
+        }
+    }
+    */
 }
-
