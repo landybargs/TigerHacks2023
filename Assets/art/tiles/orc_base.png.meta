@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0404f45d9b7bb494287cb98ef99eef24
+guid: 4c0d66eda746ccf4d9840c932fce64e8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -106,30 +119,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: characterSwordAnimations
+      name: OrcSpriteSheet
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
-        width: 33
-        height: 32
+        y: 54
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5112396adb534634cb021a7ec3f39053
-      internalID: 756493756
+      spriteID: 2503acd69910bdf4297fb681c810d81c
+      internalID: -1415695795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_1
+      name: orc_base_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 224
-        width: 33
-        height: 32
+        x: 16
+        y: 54
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5505a4cf0fbca6a4b87c50d6e9accb85
-      internalID: 1726068720
+      spriteID: 0e3e143a8cd66674288e2050f927d2d4
+      internalID: -1128005603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_2
+      name: orc_base_2
       rect:
         serializedVersion: 2
-        x: 66
-        y: 224
-        width: 33
-        height: 32
+        x: 32
+        y: 54
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f02f6b4c7604904eae4cefd75311220
-      internalID: 1178833036
+      spriteID: bc434b110c00af24681417976799dfe2
+      internalID: 376636663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_3
+      name: orc_base_3
       rect:
         serializedVersion: 2
-        x: 99
-        y: 224
-        width: 33
-        height: 32
+        x: 48
+        y: 54
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e44c009a00236c4468bba31a9c98ff0f
-      internalID: -909209263
+      spriteID: d043a413903a46a4ea42a6bcea9d5fd7
+      internalID: 492789784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_4
+      name: orc_base_4
       rect:
         serializedVersion: 2
-        x: 132
-        y: 224
-        width: 33
-        height: 32
+        x: 64
+        y: 54
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70411bc1bf83f5c4fb450b9244aa067e
-      internalID: 180651351
+      spriteID: e1064a59024a11f4fac77d64aad42370
+      internalID: 332903399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_5
+      name: orc_base_5
       rect:
         serializedVersion: 2
-        x: 165
-        y: 224
-        width: 33
-        height: 32
+        x: 80
+        y: 54
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 988ee694fa185d44fb4f063b04d539d5
-      internalID: -623812087
+      spriteID: c19a020c7ce64d84999d9f584205bba2
+      internalID: -242960358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_6
+      name: orc_base_6
       rect:
         serializedVersion: 2
-        x: 198
-        y: 224
-        width: 33
-        height: 32
+        x: 96
+        y: 54
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50f4792677c6e2f4bb898db12c791eef
-      internalID: 1314474371
+      spriteID: 11d3f1a7e636b0a479b8ced9e17d75c4
+      internalID: 1198316958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_7
+      name: orc_base_7
       rect:
         serializedVersion: 2
-        x: 231
-        y: 224
-        width: 33
-        height: 32
+        x: 112
+        y: 54
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f852259179ac83e4f8563eafd2462eb9
-      internalID: 1638860258
+      spriteID: 9aab3f5c43c1a6041bdb9c4e25042ec6
+      internalID: -704453698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_8
+      name: orc_base_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 33
-        height: 32
+        x: 128
+        y: 54
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,146 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2b771e020ee7d54a900999d1784c6c8
-      internalID: 2007707901
+      spriteID: 12a984e0fb2c3ab40b9385a450fdddb2
+      internalID: -1280698089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_9
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 192
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 665aa11fe5da4c94b850329a42355211
-      internalID: 1195365979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_10
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 192
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c26b659d51c3d74aa0d087b3d06e633
-      internalID: -1285422876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_11
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 192
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66547fe3a501c844ca09068da20975ce
-      internalID: 1724026242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_12
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 192
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f1b4b43affb2e449a5504f8631ecdf4
-      internalID: -1761415885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_13
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 192
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d61911c39b17de4eab26f1809bd07d9
-      internalID: -1893343116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_14
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 192
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa6dceb8eb325eb46a0c98d193f2ddd8
-      internalID: 1255138090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_15
+      name: orc_base_9
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 33
-        height: 32
+        y: 36
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4958774876a27a4baddb24bde598498
-      internalID: -1169439383
+      spriteID: 4ef829d7b58fc814582a42c4faabe0e9
+      internalID: -1961465759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_16
+      name: orc_base_10
       rect:
         serializedVersion: 2
-        x: 33
-        y: 160
-        width: 33
-        height: 32
+        x: 16
+        y: 36
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -473,20 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3f5124024cb227429f8bf4408dd76a1
-      internalID: 106590607
+      spriteID: 462aae217d75a2e4a8d58734119ca556
+      internalID: 1667975576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_17
+      name: orc_base_11
       rect:
         serializedVersion: 2
-        x: 66
-        y: 160
-        width: 33
-        height: 32
+        x: 32
+        y: 36
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -494,20 +368,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: befd6aefb881b7b4ba2ece9d32bce91e
-      internalID: -1039053680
+      spriteID: 68e8cdb925213f4449639c9e6f3ec02d
+      internalID: -1810382866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_18
+      name: orc_base_12
       rect:
         serializedVersion: 2
-        x: 99
-        y: 160
-        width: 33
-        height: 32
+        x: 48
+        y: 36
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -515,20 +389,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f153cf4e382cd6e4db622b5480b80569
-      internalID: 606430337
+      spriteID: 842c96cf9bb7a1b459823b2b2ec87d72
+      internalID: 1431297738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_19
+      name: orc_base_13
       rect:
         serializedVersion: 2
-        x: 132
-        y: 160
-        width: 33
-        height: 32
+        x: 64
+        y: 36
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,20 +410,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f65a359b62b46c24b86264f64e758fcf
-      internalID: 1073077798
+      spriteID: abfba9c22a0657e46b435b3ed70495cb
+      internalID: -375848045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_20
+      name: orc_base_14
       rect:
         serializedVersion: 2
-        x: 165
-        y: 160
-        width: 33
-        height: 32
+        x: 80
+        y: 36
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -557,20 +431,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 034f46c045bfa8d469b0fec35010323d
-      internalID: 114494559
+      spriteID: 8ce10467605574649b2db965e61e2e6c
+      internalID: -1581348403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_21
+      name: orc_base_15
       rect:
         serializedVersion: 2
-        x: 198
-        y: 160
-        width: 33
-        height: 32
+        x: 96
+        y: 36
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,20 +452,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbe98062677e6d24d9e608d7b84469a4
-      internalID: -1276889240
+      spriteID: c59b387b50f4fd044bcc175666a28549
+      internalID: 1952126411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_22
+      name: orc_base_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 33
-        height: 32
+        x: 112
+        y: 36
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -599,20 +473,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e2f4d7be00d5814eb27c36b74f8f84a
-      internalID: -267281329
+      spriteID: 1adce3798660fbb448a7eb3569c98c7a
+      internalID: 1469294167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_23
+      name: orc_base_17
       rect:
         serializedVersion: 2
-        x: 33
-        y: 128
-        width: 33
-        height: 32
+        x: 128
+        y: 36
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -620,125 +494,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c026cec1c4d1e9c42b05f2d24e562fc9
-      internalID: 163140190
+      spriteID: 1ec57199378df68478677b70cf2f22a8
+      internalID: -1664389647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_24
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 128
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad9fa888edea6324e813a50ab1a86437
-      internalID: 1798963121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_25
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 128
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15845dee88237ed43ae36b226d2ac591
-      internalID: -349463460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_26
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 128
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d2b8caaa59e40d4db5cd481f40c8145
-      internalID: -2142361068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_27
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 128
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2156b7d6e8daca844a0c40dedb90fc49
-      internalID: -1991515827
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_28
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 128
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be72fc60132c2be4ea39de68dfefc922
-      internalID: 665972917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_29
+      name: orc_base_18
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 33
-        height: 32
+        y: 18
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -746,20 +515,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 419a2ae1fd304ec49bd416802c95fe78
-      internalID: 267986988
+      spriteID: 70ca900b3f64fbf4f8446ef27dd3a387
+      internalID: -1428242804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_30
+      name: orc_base_19
       rect:
         serializedVersion: 2
-        x: 33
-        y: 96
-        width: 33
-        height: 32
+        x: 16
+        y: 18
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -767,20 +536,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2e7655d44f52ad4380081525e9c98bb
-      internalID: -1719609670
+      spriteID: 97ce09c034e8baf4298d527388e1716b
+      internalID: -150297468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_31
+      name: orc_base_20
       rect:
         serializedVersion: 2
-        x: 66
-        y: 96
-        width: 33
-        height: 32
+        x: 32
+        y: 18
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -788,20 +557,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0aa18e025fd78e42b51f88d467b0dd0
-      internalID: 1919490448
+      spriteID: 6bd655609a11c414d99c9a0509d4508d
+      internalID: 1871937198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_32
+      name: orc_base_21
       rect:
         serializedVersion: 2
-        x: 99
-        y: 96
-        width: 33
-        height: 32
+        x: 48
+        y: 18
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -809,20 +578,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a0c881343e15814ab5106324b87ec8d
-      internalID: 1980147218
+      spriteID: 70830d2e1a6f1494cb9d5499afc42391
+      internalID: -2058659636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_33
+      name: orc_base_22
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 33
-        height: 32
+        x: 64
+        y: 18
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -830,20 +599,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 097469945d5ba7b4aaaa0cdb4e0998bf
-      internalID: -1428014197
+      spriteID: 3c198d52cd851d74087512feee3408e4
+      internalID: -1529101283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_34
+      name: orc_base_23
       rect:
         serializedVersion: 2
-        x: 33
-        y: 64
-        width: 33
-        height: 32
+        x: 80
+        y: 18
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -851,20 +620,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13fc6a2defc71c646a7e0f5097970620
-      internalID: -1854296076
+      spriteID: a78557a0df63ddc42bf10801c2c828ee
+      internalID: -1643998895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_35
+      name: orc_base_24
       rect:
         serializedVersion: 2
-        x: 66
-        y: 64
-        width: 33
-        height: 32
+        x: 96
+        y: 18
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -872,20 +641,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c7a6b5ad2d9e4d468bf788499d4f94f
-      internalID: -1182286399
+      spriteID: 04102513d616f2445a019b8ef2f11a6f
+      internalID: -1599394221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_36
+      name: orc_base_25
       rect:
         serializedVersion: 2
-        x: 99
-        y: 64
-        width: 33
-        height: 32
+        x: 112
+        y: 18
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -893,20 +662,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a95cb4c0ecac2344ab23836f35746002
-      internalID: 1287796365
+      spriteID: 470b01a6ede6aac49a2790cc77558393
+      internalID: 1371973736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_37
+      name: orc_base_26
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 33
-        height: 32
+        x: 128
+        y: 18
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -914,83 +683,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e93796d386e2194daf9b7716bd0acf8
-      internalID: 511228152
+      spriteID: cbf40d1880b5c2e4ebe941e93bc60484
+      internalID: -474848719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_38
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 32
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11cdbe534e85c9e439a7957fb48f0503
-      internalID: 510526645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_39
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 32
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11e58a5a5584b2744a18f6ad4c6f0691
-      internalID: -1821492328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_40
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 32
-        width: 33
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54412b61f4e1f1b4fa2fb66b8c38038d
-      internalID: 1418471117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: character_41
+      name: orc_base_27
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 33
-        height: 32
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -998,20 +704,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b336338a694025a4aaea30a67075d4be
-      internalID: -2140526732
+      spriteID: ff0ba4b95dd751d4fb8806752edc450d
+      internalID: 2077496063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_42
+      name: orc_base_28
       rect:
         serializedVersion: 2
-        x: 33
+        x: 16
         y: 0
-        width: 33
-        height: 32
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1019,20 +725,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14c5df97ebb95ba4bb66fc3b15f12fc2
-      internalID: -411961427
+      spriteID: 1227edf8d8deede4fa9e10ee9f52c6b3
+      internalID: 632827706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_43
+      name: orc_base_29
       rect:
         serializedVersion: 2
-        x: 66
+        x: 32
         y: 0
-        width: 33
-        height: 32
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1040,20 +746,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64b0f7267bc71e64db2a21b479c6a5e2
-      internalID: -430815377
+      spriteID: cf8db1c0d5f790a42b43ba376ecba1ee
+      internalID: 867372485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character_44
+      name: orc_base_30
       rect:
         serializedVersion: 2
-        x: 99
+        x: 48
         y: 0
-        width: 33
-        height: 32
+        width: 16
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1061,8 +767,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1933d4d5605b6214cae563014ebd0d7c
-      internalID: 256441843
+      spriteID: d8b5b38509fca424abe08b1bc45ac7ab
+      internalID: 818164895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_base_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1150ce4124ea354db9b68f482f7d2ad
+      internalID: 592710499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_base_32
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c83fa5ac60e0f44a10ef8aa7bb5461
+      internalID: 1217737746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_base_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbf68dfe3df79e4dab62edb2d0031f1
+      internalID: 212264507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_base_34
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670cb2cf589f37c4abbb8948803ef3af
+      internalID: -290579767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc_base_35
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bad54963343d24a802b206b62d188f
+      internalID: 1643240205
       vertices: []
       indices: 
       edges: []
@@ -1078,51 +889,42 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      characterSwordAnimations: 756493756
-      character_1: 1726068720
-      character_10: -1285422876
-      character_11: 1724026242
-      character_12: -1761415885
-      character_13: -1893343116
-      character_14: 1255138090
-      character_15: -1169439383
-      character_16: 106590607
-      character_17: -1039053680
-      character_18: 606430337
-      character_19: 1073077798
-      character_2: 1178833036
-      character_20: 114494559
-      character_21: -1276889240
-      character_22: -267281329
-      character_23: 163140190
-      character_24: 1798963121
-      character_25: -349463460
-      character_26: -2142361068
-      character_27: -1991515827
-      character_28: 665972917
-      character_29: 267986988
-      character_3: -909209263
-      character_30: -1719609670
-      character_31: 1919490448
-      character_32: 1980147218
-      character_33: -1428014197
-      character_34: -1854296076
-      character_35: -1182286399
-      character_36: 1287796365
-      character_37: 511228152
-      character_38: 510526645
-      character_39: -1821492328
-      character_4: 180651351
-      character_40: 1418471117
-      character_41: -2140526732
-      character_42: -411961427
-      character_43: -430815377
-      character_44: 256441843
-      character_5: -623812087
-      character_6: 1314474371
-      character_7: 1638860258
-      character_8: 2007707901
-      character_9: 1195365979
+      OrcSpriteSheet: -1415695795
+      orc_base_1: -1128005603
+      orc_base_10: 1667975576
+      orc_base_11: -1810382866
+      orc_base_12: 1431297738
+      orc_base_13: -375848045
+      orc_base_14: -1581348403
+      orc_base_15: 1952126411
+      orc_base_16: 1469294167
+      orc_base_17: -1664389647
+      orc_base_18: -1428242804
+      orc_base_19: -150297468
+      orc_base_2: 376636663
+      orc_base_20: 1871937198
+      orc_base_21: -2058659636
+      orc_base_22: -1529101283
+      orc_base_23: -1643998895
+      orc_base_24: -1599394221
+      orc_base_25: 1371973736
+      orc_base_26: -474848719
+      orc_base_27: 2077496063
+      orc_base_28: 632827706
+      orc_base_29: 867372485
+      orc_base_3: 492789784
+      orc_base_30: 818164895
+      orc_base_31: 592710499
+      orc_base_32: 1217737746
+      orc_base_33: 212264507
+      orc_base_34: -290579767
+      orc_base_35: 1643240205
+      orc_base_4: 332903399
+      orc_base_5: -242960358
+      orc_base_6: 1198316958
+      orc_base_7: -704453698
+      orc_base_8: -1280698089
+      orc_base_9: -1961465759
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
