@@ -44,20 +44,17 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public Transform player; // Drag the Player object into this field in the Unity Inspector
+    public Transform player;
     public float moveSpeed = .01f;
 
     private void Update()
     {
         if (player != null)
         {
-            // Calculate the direction from the enemy to the player
             Vector3 direction = player.position - transform.position;
 
-            // Normalize the direction vector to ensure constant movement speed
             direction.Normalize();
 
-            // Move the enemy towards the player without rotation
             transform.Translate(direction * moveSpeed * Time.deltaTime);
         }
     }

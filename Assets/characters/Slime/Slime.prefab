@@ -162,8 +162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a02bbe71e1ebd4444a01dcfb63ee3c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 0.8
   health: 1
+  player: {fileID: 5741935249833332440, guid: 76754afc4e05842719047d530b403146, type: 3}
+  moveSpeed: 0.01
 --- !u!95 &6809438980373151639
 Animator:
   serializedVersion: 5
