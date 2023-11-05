@@ -18,7 +18,7 @@ public class Health : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.H))
         {
-            //Heal(10);
+            Heal(10);
         }
        
     }
@@ -27,6 +27,13 @@ public class Health : MonoBehaviour
     {
         this.MAX_HEALTH = maxHealth;
         this.health = health;
+    }
+
+    private IEnumerator VisualIndicator(Color color)
+    {
+        GetComponentInParent<SpriteRenderer>().color = color;
+        yield return new WaitForSeconds(0.15f);
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 
     public void Damage(int amount)
@@ -52,8 +59,10 @@ public class Health : MonoBehaviour
         }
 
         this.health -= amount;
+        StartCoroutine(VisualIndicator(Color.red));
 
         bool wouldBeOverMaxHealth = health + amount > MAX_HEALTH;
+        StartCoroutine(VisualIndicator(Color.green));
 
         if(health + amount > MAX_HEALTH)
         {

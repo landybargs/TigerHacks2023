@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08ef4b4cc2b94954ba5ba0be5114ac3f, type: 3}
   m_Name: OrcWarrior
   m_EditorClassIdentifier: 
-  hp: 0
-  damage: 0
-  speed: 0
+  hp: 12
+  damage: 5
+  speed: 1.5
